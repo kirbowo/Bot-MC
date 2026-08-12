@@ -6,4 +6,4 @@ RUN chmod +x mcc
 COPY MinecraftClient.ini .
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 ENV PORT=3000
-CMD ttyd -p $PORT ./mcc
+CMD ttyd -W -p $PORT ./mcc
